@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'Roboto-thin';
+    src: url(../fonts/Roboto-Thin.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype')
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto-thin';
+}
+:root {
+    --white: #fff;
+    --navy: #1c1f36;
+    --orange-dark: #f08125;
+    --orange-light: #f6b332
+}
+/* CABEÇALHO */
+.back-img {
+    background-image: url('../images/background.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    width: 100%;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+width: 25px;
+height: 3px;
+background-color: var(--orange-dark);
+margin: 6px 0;
+}
+  
+.items-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+.items-container img {
+    width: 45px;
+    height: 45px;
+    margin-top: 30px;
+    padding: 2px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.items-container img:hover {
+    background-color: #ffffff7a;
+}
+
+.items-container li {
+    margin-top: 30px;
+    margin-right: 20px; 
+    justify-content: space-around;
+    border: 1px solid var(--orange-dark);
+    border-radius: 30px;
+    background-color: var(--orange-dark);
+    padding: 15px 50px;
+    gap: 10;
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--navy);
+}
+.items-container li:hover {
+    background-color: black;
+    cursor: pointer;
+    color: var(--white);
+}
+
+
+/* TEXTOS MOTIVACIONAIS */
+
+.motivation {
+    background-color: #fdfdfd;
+    color: black;
+    padding: 5rem 0;
+}
+.motivation ul {
+
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.motivation li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+.motivation p {
+    line-height: 24px;
+    font-family: 'Roboto-regular';
+}
+.emoji {
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+/* Preços */
+
+.plans-container {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+.plans-container h2 {
+    font-size: 36px;
+}
+.plans-container p {
+    font-size: 20px;
+}
+.plans {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
+.planos {
+    flex: 1;
+    width: 275px;
+    margin: 0 20px;
+}
+.planos ul {
+    padding: 0;
+    border-radius: 60px;
+}
+.planos li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--orange-light);
+    color: var(--navy);
+}
+.planos .price {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    line-height: 120px;
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+}
+.plan-name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto-bold';
+    font-weight: bold;
+    padding: 50px 0 0 0;
+
+}
+a {
+    text-decoration: none;
+}
+a .sign {
+    background-color: var(--navy);
+    color: var(--white);
+    font-size: 24px;
+    text-align: center;
+    transition: 0.7s;
+    border: 1px solid var(--navy);
+}
+a .sign:hover {
+    background-color: #fdfdfd;
+    color: var(--navy);
+}
+
+/* contato */
+.contact-container {
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+.contact-container h2 {
+    font-size: 36px;
+}
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.contact-container input, 
+.contact-container textarea {
+    width: 200px;
+    padding: 20px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid var(--navy);
+    margin: 0 10px 20px;
+}
+.contact-container textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+.contact-container input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--orange-light);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.6s;
+}
+.contact-container input[type="submit"]:hover {
+    background-color: var(--white);
+    color: var(--navy);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0 100px;
+}
+small a {
+    text-decoration: none;
+    color: var(--navy); 
+}
+small a:hover {
+    color: var(--orange-dark);
+}
+
+/* VOLTAR AO TOPO */
+
+#topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.voltar-ao-topo {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+/* Tablets 900px */
+
+@media(max-width: 900px) {
+    .items-container ul {
+        list-style: none;
+        margin: 0 -5px 0 0;
+        padding: 0 12px 0 25px;
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+    }
+    
+}
+/* Tablets 576px */
+@media (max-width: 576px) {
+    .items-container ul {
+        display: block;
+    }
+    .menu-icon {
+        display: block;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .bar {
+    margin: 3px 0;
+    color: var(--orange-dark);
+    }
+    #menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 50%;
+        font-size: 14px;
+    }
+    #menu.show {
+    display: flex;
+    }
+    .menu-item {
+        display: block;
+        padding: 6px;
+        text-align: center;
+      }
+    .plans {
+        flex-direction: column;
+    }
+    .planos {
+        margin: 15px auto 30px auto;
+        width: 75%;
+    }
+    .motivation ul {
+        flex-direction: column;
+        margin: 15px auto 25px;
+    }
+    .motivation .emoji {
+        margin: 15px auto 25px;
+    }
+    .contact-container {
+        text-align: center;
+        padding: 5rem 0 2rem 0;
+        width: 90%;
+    }
+    .contact-container input {
+        width: 95%;
+        padding: 20px 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 1px solid var(--navy);
+        margin: 0 10px 20px;
+    }
+    .contact-container textarea {
+        display: block;
+        margin: 0 auto 20px;
+        width: 80%;
+        height: 150px;
+    }
+    footer {
+        text-align: center;
+        font-weight: bold;
+        margin: 20px 0 50px;
+    }
+}

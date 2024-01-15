@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="back-img">
+            <section id="backtotop">
+                <div class="header-container">
+                    <nav class="items-container">
+                
+                        <ul>
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="#"><li>Sobre</li></a>
+                            <a href="https://maps.app.goo.gl/YUom9EtFefhijz75A" target="_blank"><li>Localização</li></a>
+                            <a href="#contato"><li>Contato</li></a>
+                        </ul>
+                    </nav>
+                    </div>
+            </section>
+            </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Obtenha o caminho da URL atual
+            const path = window.location.pathname;
+
+            // Selecione todos os elementos de menu
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            // Itere sobre os itens do menu
+            menuItems.forEach(item => {
+        // Obtenha o caminho do link do item do menu
+                const linkPath = item.getAttribute('href');
+
+                // Verifique se o caminho da URL atual corresponde ao caminho do link do item do menu
+                if (path === linkPath) {
+                    // Adicione uma classe para destacar o item do menu
+                    item.classList.add('menu-item-ativo');
+                }
+            });
+});
+    </script>
+</body>
+</html>
