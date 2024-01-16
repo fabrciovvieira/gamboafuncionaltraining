@@ -23,7 +23,7 @@
 }
 /* CABEÇALHO */
 .back-img {
-    background-image: url('../images/background.png');
+    background-image: url('../images/backgroundhome.png');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -75,6 +75,7 @@ margin: 6px 0;
     transition: 0.5s;
     text-decoration: none;
     color: var(--navy);
+    font-family: 'Roboto-bold';
 }
 .items-container li:hover {
     background-color: black;
