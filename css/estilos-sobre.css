@@ -75,3 +75,30 @@ margin: 6px 0;
     cursor: pointer;
     color: var(--white);
 }
+/* sobre */
+
+.about-container {
+    padding: 5rem;
+    text-align: center;
+    background-color: #fafafa;
+}
+.about img {
+    width: 300px;
+    height: 475px;
+    display: flex;
+    justify-content: left;
+    position: absolute;
+}
+.about h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0 auto 20px;
+    margin: 0 auto 20px;
+}
+.pabout {
+    display: flex;
+    width: 60%;
+    text-align: center;
+    margin: 20px 0px 20px auto;
+    padding: 20px 10px auto;
+}
